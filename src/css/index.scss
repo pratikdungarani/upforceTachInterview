@@ -1,0 +1,102 @@
+$black:#000;
+$white:#fff;
+$green:#10FF8D;
+$bglight:#242424;
+$error: #ff0000;
+
+*{margin: 0;padding: 0;box-sizing: border-box;}
+.overlay{position: fixed;inset: 0; width: 100%;height: 100%; display: flex;align-items: center;justify-content: center;background: rgba(0,0,0,0.7);}
+button{cursor: pointer;}
+.srv-validation-message{color: $error;}
+.text_center{text-align: center;}
+
+.container{
+    max-width: 480px;
+   margin: 0 auto;
+    padding: 0 15px;
+    .main_content{
+        margin-top: 40px;
+        padding: 40px;
+        box-shadow: 0 1px 4px 0px rgb(0 0 0 / 12%);
+        background: $bglight;
+    }
+    .form_section{
+        padding-top: 40px;
+        form{
+            .tab_wrap{
+                display: inline-block;
+                border-radius: 25px;
+                overflow: hidden;
+                background: $black;
+                margin:0 auto 25px;
+                label{
+                    color: $white;
+                    display: inline-block;
+                    position: relative;
+                    border-radius: 25px;
+                overflow: hidden;
+                    input{
+                        position: absolute;
+                        opacity: 0;
+                        &:checked + span{
+                            background: $green;
+                            color: $black;
+                        }
+                    }
+                    span{
+                        display: inline-block;
+                        padding: 10px 15px;
+                        transition: 0.5s ease-in-out;
+                    }
+                }
+            }
+            .formdata{
+                width: 70%;
+                margin: 0 auto;
+            .field_row{
+                width: 100%;
+                max-width: 260px;
+                margin-right: 24px;
+                margin-bottom: 15px;
+                label{
+                    font-size: 16px;
+                    line-height: 16px;
+                    color: $white;
+                    display: block;
+                    margin-bottom: 5px;
+                }
+        input{
+            display: block;
+            width: 100%;
+            border: 2px solid $green;
+            outline: none;
+            font-size: 12px;
+            line-height: 14px;
+            color: $white;
+            padding: 12px 11px;
+            border-radius: 25px;
+            background: $black;
+        }
+        }
+        
+        .d_flex{
+            display: flex;
+            margin-top: 20px;
+            .field_row:first-child{
+                padding-right: 20px;
+            }
+        }
+        button{
+            background-color: $green;
+            color: $black;
+            border: none;
+            padding:10px 15px;
+            font-size: 12px;
+            border-radius: 15px;
+        }
+            }
+        }
+    }
+
+   
+}
