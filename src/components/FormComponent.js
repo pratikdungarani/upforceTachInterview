@@ -40,6 +40,7 @@ function FormComponent() {
 
     const handleRadioChange = (e) => {
         setselectedform(e?.target?.value)
+        simpleValidator?.current?.hideMessages()
     }
     const CheckBoxChange = (e) => {
         setagree(e?.target?.checked)
