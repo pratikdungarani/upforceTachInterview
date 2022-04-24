@@ -11,7 +11,7 @@ export const Service = {
     SignupForm : data =>  
     {
         const {alldata,formtype} = data;
-        return axios.post(`http://wren.in:3200/api/sign-up/${formtype}`,  alldata ) .then( ResponseSuccess, ResponseError)
+        return axios.post(`http://wren.in:3200/api/sign-up/${formtype}`,  alldata ).then( ResponseSuccess, ResponseError)
     }
 };
 
