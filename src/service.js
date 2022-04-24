@@ -1,7 +1,4 @@
 import axios from "axios";
-const API = 'http://wren.in:3200/api/sign-up/'
-
-
 
 const ResponseSuccess = (res) => {
     return res
@@ -9,7 +6,6 @@ const ResponseSuccess = (res) => {
 const ResponseError = (res) => {
     return res
 }
-
 
 export const Service = {
     SignupForm : data =>  
